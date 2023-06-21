@@ -1,0 +1,190 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    flex: 1;
+}
+.Resume-box{
+    display: flex;
+    width: auto;
+    position: relative;
+}
+
+.Content-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.image {
+    max-width: 400px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+label{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgb(99, 165, 165);
+}
+
+.Content-left h1,h4,p{
+   padding-left: 60px;
+}
+
+.left-box{
+    align-items: center;
+    padding: 21px;
+    justify-content: center;
+    background-color: rgb(234, 241, 241);
+    padding-right: 160px;
+    padding-bottom: 100px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.Content-left a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-size: larger;
+    line-height: 200%;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.Content-left ul{
+    list-style: none;
+    width: 100%;
+   
+}
+.Content-left ul li{
+    margin-left: 10px;
+}
+.About-Me{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Content-right{
+
+    margin-left: 600px;
+    margin-top: 0;
+    padding: 35px;
+    top: 0;
+    right: 0;
+    line-height: 30px;
+    font-size: larger;
+    background-color: rgb(173, 173, 214);
+
+}
+.Education-box{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+.Experience-box{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Skills-box{
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+.personal-box{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Skills-box ul li{
+    list-style: none;
+    background-color: rgb(99, 95, 160);
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 4px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.Skills-box ul li:hover{
+    background-color: rgb(165, 160, 182);
+}
+.Skills-box ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.project-box{
+    padding-left: 40px;
+    padding-bottom: 10PX;
+    padding-top: 10PX;
+}
+.personal-box{
+    padding-left: 40px;
+}
+.Hobbies-box{
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 768px){
+    body{
+        flex: none;
+        width: auto;
+        position: none;
+    }
+    .Resume-box{
+        display:block;
+        width: auto;
+    }
+    .Content-left{
+        position:static;
+        
+    }
+    .left-box{
+        justify-content: center;
+        padding-right: 200px;
+        
+    }
+    .image {
+        max-width: 250px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .Content-right{
+        margin-left: 0;
+        
+    }
+}
+@media screen and (max-width: 548px ){
+
+    body{
+        font-size: small;
+    }
+    .image {
+        max-width: 150px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    .Education-box,.Skills-box,.project-box,
+    .project-box,.Experience-box,.personal-box,
+    .Hobbies-box,.About-Me{
+        padding: 0px;
+    }
+    .Content-right{
+        margin: 0;
+    }
+    .Skills-box ul li{
+
+    background-color: rgb(99, 95, 160);
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 3px;
+    height: max-content;
+    text-align: center;
+}
+
+}
